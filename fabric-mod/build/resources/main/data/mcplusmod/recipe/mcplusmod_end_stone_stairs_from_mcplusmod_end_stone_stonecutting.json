@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_end_stone",
+  "result": {
+    "id": "mcplusmod:mcplusmod_end_stone_stairs"
+  }
+}

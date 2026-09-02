@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mcplusmod:item/lapis_chestplate"
+  }
+}

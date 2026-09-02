@@ -1,0 +1,98 @@
+plugins {
+	// 26.1 起使用不重映射的 net.fabricmc.fabric-loom 插件（Minecraft 已去混淆，使用 Mojang 官方名）
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	// jar 命名规范：MCPlusMod-<MC版本>-Fabric-<mod版本>.jar
+	// 例：MCPlusMod-26.1.2-Fabric-1.0.0.jar（sources 版自动加 -sources 后缀）
+	archivesName = "${project.archives_base_name}-${project.minecraft_version}-Fabric"
+}
+
+repositories {
+	// 在此添加获取依赖用的仓库。
+	// 仅在依赖其他 mod 时才需要，Loom 已自动添加下载 Minecraft 和库所需的基础仓库。
+	// 国内镜像加速：
+	maven { url = 'https://maven.aliyun.com/repository/public' }
+	maven {
+		name = 'Fabric'
+		url = 'https://maven.fabricmc.net/'
+	}
+}
+
+loom {
+	// 将客户端专用代码拆分到独立的 source set（src/client），避免服务端加载客户端类
+	splitEnvironmentSourceSets()
+
+	mods {
+		"mcplusmod" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+// 启用数据生成（datagen）：自动生成 blockstate/模型/client item/战利品表/标签/语言等 JSON。
+// 生成结果输出到 src/main/generated，并由 processResources 打包进产物。
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
+
+dependencies {
+	// 版本号在 gradle.properties 中修改
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+	// 26.1 起 Minecraft 不再重映射，普通 implementation 即可（不再用 modImplementation）
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API：理论上可选，但基本都需要
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	// Minecraft 26.1 要求 Java 25
+	it.options.release = 25
+}
+
+java {
+	// 生成 sources jar
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	// 26.1 起用普通 jar 任务（不再用 remapJar）
+	def projectName = project.name
+	inputs.property "projectName", projectName
+	from("LICENSE") {
+		rename { "${it}_$projectName" }
+	}
+}
+
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			artifactId = project.archives_base_name
+			from components.java
+		}
+	}
+	repositories {
+		// 在此添加发布目标仓库。
+	}
+}

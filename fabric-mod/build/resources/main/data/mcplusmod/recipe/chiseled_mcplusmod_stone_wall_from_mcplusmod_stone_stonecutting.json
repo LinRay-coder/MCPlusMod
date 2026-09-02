@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_stone",
+  "result": {
+    "id": "mcplusmod:chiseled_mcplusmod_stone_wall"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcplusmod:block/mcplusmod_copper_slab"
+    },
+    "type=double": {
+      "model": "mcplusmod:block/mcplusmod_copper"
+    },
+    "type=top": {
+      "model": "mcplusmod:block/mcplusmod_copper_slab_top"
+    }
+  }
+}

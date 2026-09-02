@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mcplusmod_purpur": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mcplusmod:mcplusmod_purpur"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcplusmod:mcplusmod_purpur_stairs_from_mcplusmod_purpur_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mcplusmod_purpur"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcplusmod:mcplusmod_purpur_stairs_from_mcplusmod_purpur_stonecutting"
+    ]
+  }
+}

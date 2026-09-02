@@ -1,0 +1,6 @@
+{
+  "parent": "mcplusmod:item/glove_handheld",
+  "textures": {
+    "layer0": "mcplusmod:item/amethyst_glove"
+  }
+}

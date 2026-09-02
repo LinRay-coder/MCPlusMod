@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_copper",
+  "result": {
+    "id": "mcplusmod:smooth_mcplusmod_copper_wall"
+  }
+}

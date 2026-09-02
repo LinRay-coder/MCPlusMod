@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mcplusmod:block/cut_mcplusmod_deepslate_bricks"
+    }
+  }
+}

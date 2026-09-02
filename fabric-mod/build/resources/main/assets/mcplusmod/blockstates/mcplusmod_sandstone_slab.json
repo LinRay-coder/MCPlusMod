@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcplusmod:block/mcplusmod_sandstone_slab"
+    },
+    "type=double": {
+      "model": "mcplusmod:block/mcplusmod_sandstone"
+    },
+    "type=top": {
+      "model": "mcplusmod:block/mcplusmod_sandstone_slab_top"
+    }
+  }
+}

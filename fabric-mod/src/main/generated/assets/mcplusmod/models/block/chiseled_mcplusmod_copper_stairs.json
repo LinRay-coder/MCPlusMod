@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "mcplusmod:block/chiseled_mcplusmod_copper",
+    "side": "mcplusmod:block/chiseled_mcplusmod_copper",
+    "top": "mcplusmod:block/chiseled_mcplusmod_copper"
+  }
+}

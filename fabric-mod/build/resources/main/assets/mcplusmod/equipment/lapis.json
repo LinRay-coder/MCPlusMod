@@ -1,0 +1,14 @@
+{
+	"layers": {
+		"humanoid": [
+			{
+				"texture": "mcplusmod:lapis"
+			}
+		],
+		"humanoid_leggings": [
+			{
+				"texture": "mcplusmod:lapis"
+			}
+		]
+	}
+}

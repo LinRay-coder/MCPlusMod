@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mcplusmod",
+	"version": "1.0.0",
+
+	"name": "MCPlusMod",
+	"description": "A Fabric mod for Minecraft 26.1: adds multiple equipment sets (lapis / emerald / amethyst) with spears and gloves, plus many stone building variants (stairs / slabs / walls, including smooth / cut / chiseled).",
+	"authors": [
+		"You"
+	],
+	"contact": {},
+
+	"license": "MIT",
+	"icon": "assets/mcplusmod/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.mcplusmod.MCPlusMod"
+		],
+		"client": [
+			"com.example.mcplusmod.client.MCPlusModClient"
+		],
+		"fabric-datagen": [
+			"com.example.mcplusmod.datagen.MCPlusModDataGenerator"
+		]
+	},
+	"mixins": [],
+
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}

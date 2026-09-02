@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "mcplusmod:block/smooth_mcplusmod_deepslate"
+  }
+}

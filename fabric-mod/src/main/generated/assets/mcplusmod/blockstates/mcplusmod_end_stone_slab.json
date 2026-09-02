@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcplusmod:block/mcplusmod_end_stone_slab"
+    },
+    "type=double": {
+      "model": "mcplusmod:block/mcplusmod_end_stone"
+    },
+    "type=top": {
+      "model": "mcplusmod:block/mcplusmod_end_stone_slab_top"
+    }
+  }
+}

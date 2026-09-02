@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chiseled_mcplusmod_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mcplusmod:chiseled_mcplusmod_sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcplusmod:chiseled_mcplusmod_sandstone_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chiseled_mcplusmod_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcplusmod:chiseled_mcplusmod_sandstone_stairs"
+    ]
+  }
+}

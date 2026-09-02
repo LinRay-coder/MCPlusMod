@@ -1,0 +1,13 @@
+pluginManagement {
+	repositories {
+		// 国内镜像加速（阿里云代理 Gradle 插件与 Maven Central）
+		maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+		maven { url = 'https://maven.aliyun.com/repository/public' }
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}

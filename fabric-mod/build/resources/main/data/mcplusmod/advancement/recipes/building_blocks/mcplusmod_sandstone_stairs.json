@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mcplusmod_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mcplusmod:mcplusmod_sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcplusmod:mcplusmod_sandstone_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mcplusmod_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcplusmod:mcplusmod_sandstone_stairs"
+    ]
+  }
+}

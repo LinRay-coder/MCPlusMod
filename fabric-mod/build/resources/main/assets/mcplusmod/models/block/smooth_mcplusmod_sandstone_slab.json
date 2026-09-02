@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "mcplusmod:block/smooth_mcplusmod_sandstone",
+    "side": "mcplusmod:block/smooth_mcplusmod_sandstone",
+    "top": "mcplusmod:block/smooth_mcplusmod_sandstone"
+  }
+}

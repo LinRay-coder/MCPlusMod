@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mcplusmod:block/cut_mcplusmod_andesite"
+  }
+}

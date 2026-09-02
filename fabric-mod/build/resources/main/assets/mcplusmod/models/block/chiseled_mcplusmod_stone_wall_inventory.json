@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mcplusmod:block/chiseled_mcplusmod_stone"
+  }
+}

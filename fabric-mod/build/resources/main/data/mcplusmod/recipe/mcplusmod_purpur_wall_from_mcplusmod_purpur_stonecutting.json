@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_purpur",
+  "result": {
+    "id": "mcplusmod:mcplusmod_purpur_wall"
+  }
+}

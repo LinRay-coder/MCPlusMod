@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_deepslate_bricks",
+  "result": {
+    "id": "mcplusmod:cut_mcplusmod_deepslate_bricks_wall"
+  }
+}

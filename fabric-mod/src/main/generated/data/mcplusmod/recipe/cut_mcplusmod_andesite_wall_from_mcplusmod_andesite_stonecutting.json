@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_andesite",
+  "result": {
+    "id": "mcplusmod:cut_mcplusmod_andesite_wall"
+  }
+}

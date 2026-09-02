@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcplusmod:block/mcplusmod_purpur_slab"
+    },
+    "type=double": {
+      "model": "mcplusmod:block/mcplusmod_purpur"
+    },
+    "type=top": {
+      "model": "mcplusmod:block/mcplusmod_purpur_slab_top"
+    }
+  }
+}

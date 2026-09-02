@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chiseled_mcplusmod_copper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mcplusmod:chiseled_mcplusmod_copper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mcplusmod:chiseled_mcplusmod_copper_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chiseled_mcplusmod_copper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mcplusmod:chiseled_mcplusmod_copper_stairs"
+    ]
+  }
+}

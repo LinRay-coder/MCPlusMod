@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "mcplusmod:block/chiseled_mcplusmod_stone_bricks",
+    "side": "mcplusmod:block/chiseled_mcplusmod_stone_bricks",
+    "top": "mcplusmod:block/chiseled_mcplusmod_stone_bricks"
+  }
+}

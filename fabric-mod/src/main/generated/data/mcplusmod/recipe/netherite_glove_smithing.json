@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "mcplusmod:diamond_glove",
+  "result": {
+    "id": "mcplusmod:netherite_glove"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

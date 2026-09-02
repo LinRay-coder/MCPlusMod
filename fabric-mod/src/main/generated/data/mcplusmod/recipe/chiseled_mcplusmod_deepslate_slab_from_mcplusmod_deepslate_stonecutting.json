@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mcplusmod:mcplusmod_deepslate",
+  "result": {
+    "count": 2,
+    "id": "mcplusmod:chiseled_mcplusmod_deepslate_slab"
+  }
+}

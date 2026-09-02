@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcplusmod:block/chiseled_mcplusmod_deepslate_slab"
+    },
+    "type=double": {
+      "model": "mcplusmod:block/chiseled_mcplusmod_deepslate"
+    },
+    "type=top": {
+      "model": "mcplusmod:block/chiseled_mcplusmod_deepslate_slab_top"
+    }
+  }
+}

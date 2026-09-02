@@ -1,0 +1,94 @@
+[18:55:18] [main/WARN] (FabricLoader/Knot) Class path entries reference missing files: C:\Users\Linrui\Documents\trae_projects\MAN\fabric-mod\build\resources\client - the game may not load properly!
+[18:55:18] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 26.1.2 with Fabric Loader 0.19.3
+[18:55:18] [main/INFO] (FabricLoader/Mappings) Mappings not present!
+[18:55:20] [main/INFO] (FabricLoader) Loading 51 mods:
+	- fabric-api 0.155.2+26.1.2
+	- fabric-api-base 2.0.3+ece063234c
+	- fabric-api-lookup-api-v1 2.0.12+d5a053b64c
+	- fabric-biome-api-v1 18.0.5+2fa62b4e4c
+	- fabric-block-api-v1 3.0.2+ec56b6014c
+	- fabric-block-getter-api-v2 2.0.6+ec56b6014c
+	- fabric-client-gametest-api-v1 5.1.0+0a5283664c
+	- fabric-command-api-v2 3.0.5+e2bdee784c
+	- fabric-content-registries-v0 11.3.0+0082c9664c
+	- fabric-convention-tags-v2 4.6.2+4f11f7994c
+	- fabric-crash-report-info-v1 1.0.3+9f78a5a84c
+	- fabric-creative-tab-api-v1 5.0.11+d871b99e4c
+	- fabric-data-attachment-api-v1 2.2.9+44a0bd1d4c
+	- fabric-data-generation-api-v1 24.3.3+cda368334c
+	- fabric-debug-api-v1 1.0.1+c792624d4c
+	- fabric-dimensions-v1 5.1.7+ad343a8d4c
+	- fabric-entity-events-v1 5.0.2+e2bdee784c
+	- fabric-events-interaction-v0 5.2.2+07b380be4c
+	- fabric-game-rule-api-v1 4.0.5+d871b99e4c
+	- fabric-gametest-api-v1 4.0.17+867b87624c
+	- fabric-item-api-v1 14.3.0+6d1aaa724c
+	- fabric-key-mapping-api-v1 2.0.4+e2bdee784c
+	- fabric-lifecycle-events-v1 4.1.1+df84eb3d4c
+	- fabric-loot-api-v3 3.0.12+00a1fba64c
+	- fabric-menu-api-v1 2.0.14+d871b99e4c
+	- fabric-message-api-v1 7.0.5+dae8ce3e4c
+	- fabric-model-loading-api-v1 8.0.11+c80601bb4c
+	- fabric-networking-api-v1 6.3.1+554860db4c
+	- fabric-object-builder-api-v1 23.1.0+abb459f14c
+	- fabric-particles-v1 5.0.15+b61fef434c
+	- fabric-permission-api-v1 1.0.2+7437387b4c
+	- fabric-recipe-api-v1 9.0.16+be4b75ae4c
+	- fabric-registry-sync-v0 7.1.0+2fa62b4e4c
+	- fabric-renderer-api-v1 13.0.8+c80601bb4c
+	- fabric-renderer-indigo 8.1.5+1403e82c4c
+	- fabric-rendering-fluids-v1 6.0.1+d871b99e4c
+	- fabric-rendering-v1 23.3.1+e9207d814c
+	- fabric-resource-conditions-api-v1 6.1.0+83dd0ba34c
+	- fabric-resource-loader-v0 3.3.17+4fc5413f4c
+	- fabric-resource-loader-v1 2.0.10+7c44c7324c
+	- fabric-screen-api-v1 5.1.0+981dd9b24c
+	- fabric-serialization-api-v1 2.0.3+11a26f314c
+	- fabric-sound-api-v1 2.0.4+11a26f314c
+	- fabric-tag-api-v1 2.1.1+371cf5db4c
+	- fabric-transfer-api-v1 8.0.6+357ea7334c
+	- fabric-transitive-access-wideners-v1 8.1.3+3ff549fb4c
+	- fabricloader 0.19.3
+	- java 26
+	- mcplusmod 1.0.0
+	- minecraft 26.1.2
+	- mixinextras 0.5.4
+[18:55:22] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Linrui/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.3+mixin.0.8.7/41c4a3984a80f4679e759fb9f495587acc5cdac7/sponge-mixin-0.17.3+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[18:55:22] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_25
+[18:55:54] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[18:57:04] [Datafixer Bootstrap/INFO] (Minecraft) 291 Datafixer optimizations took 63622 milliseconds
+[18:57:06] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:57:06] [Render thread/INFO] (Minecraft) Setting user: Player818
+[18:57:12] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at knot//com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:59)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:150)
+	at knot//net.minecraft.client.Minecraft.lambda$new$1(Minecraft.java:459)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:103)
+	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:121)
+	... 5 more
+[18:57:14] [Render thread/INFO] (mcplusmod) [MCPlusMod] Initialized: stone building variants, simple families, lapis/emerald/amethyst equipment and gloves registered.
+[18:57:14] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[18:57:21] [Render thread/INFO] (FabricDataGenHelper) Running data generator for mcplusmod
+[18:57:25] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/Model Definitions
+[18:57:26] [Render thread/INFO] (Minecraft) MCPlusMod/Model Definitions finished after 1388 ms
+[18:57:26] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/Block Loot Tables
+[18:57:26] [Render thread/INFO] (Minecraft) MCPlusMod/Block Loot Tables finished after 318 ms
+[18:57:26] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/Tags for minecraft:block
+[18:57:27] [Render thread/INFO] (Minecraft) MCPlusMod/Tags for minecraft:block finished after 108 ms
+[18:57:27] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/Tags for minecraft:item
+[18:57:27] [Render thread/INFO] (Minecraft) MCPlusMod/Tags for minecraft:item finished after 16 ms
+[18:57:27] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/ModRecipeProvider
+[18:57:27] [Render thread/INFO] (Minecraft) MCPlusMod/ModRecipeProvider finished after 874 ms
+[18:57:27] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/Language (en_us)
+[18:57:27] [Render thread/INFO] (Minecraft) MCPlusMod/Language (en_us) finished after 25 ms
+[18:57:27] [Render thread/INFO] (Minecraft) Starting provider: MCPlusMod/Language (zh_cn)
+[18:57:27] [Render thread/INFO] (Minecraft) MCPlusMod/Language (zh_cn) finished after 11 ms
+[18:57:27] [Render thread/INFO] (Minecraft) All providers took: 2763 ms
+[18:57:28] [Render thread/INFO] (Minecraft) Caching: total files: 1282, old count: 1282, new count: 1282, removed stale: 0, written: 0

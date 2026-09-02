@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mcplusmod:block/cut_mcplusmod_stone"
+  }
+}
