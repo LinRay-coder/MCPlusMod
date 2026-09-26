@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "mcplusmod:mcplusmod_deepslate_bricks",
-  "result": {
-    "id": "mcplusmod:smooth_mcplusmod_deepslate_bricks_stairs"
-  }
-}

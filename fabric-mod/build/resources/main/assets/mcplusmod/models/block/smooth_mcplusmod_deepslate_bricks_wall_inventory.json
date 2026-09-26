@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "mcplusmod:block/smooth_mcplusmod_deepslate_bricks"
-  }
-}

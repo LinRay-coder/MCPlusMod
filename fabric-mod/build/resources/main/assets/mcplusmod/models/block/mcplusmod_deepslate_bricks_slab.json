@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "mcplusmod:block/mcplusmod_deepslate_bricks",
-    "side": "mcplusmod:block/mcplusmod_deepslate_bricks",
-    "top": "mcplusmod:block/mcplusmod_deepslate_bricks"
-  }
-}

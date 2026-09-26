@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# Fabric / Minecraft 运行目录
+run/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+*.launch
+.settings/
+.classpath
+.project
+bin/
+
+# VS Code
+.vscode/
+
+# 系统/日志
+*.DS_Store
+*.log

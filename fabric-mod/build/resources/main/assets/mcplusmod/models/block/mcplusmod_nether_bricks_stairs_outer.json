@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "mcplusmod:block/mcplusmod_nether_bricks",
-    "side": "mcplusmod:block/mcplusmod_nether_bricks",
-    "top": "mcplusmod:block/mcplusmod_nether_bricks"
-  }
-}

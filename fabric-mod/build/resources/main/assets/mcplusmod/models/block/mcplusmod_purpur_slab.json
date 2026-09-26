@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "mcplusmod:block/mcplusmod_purpur",
-    "side": "mcplusmod:block/mcplusmod_purpur",
-    "top": "mcplusmod:block/mcplusmod_purpur"
-  }
-}

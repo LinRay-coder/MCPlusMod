@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "mcplusmod:block/chiseled_mcplusmod_deepslate",
-    "side": "mcplusmod:block/chiseled_mcplusmod_deepslate",
-    "top": "mcplusmod:block/chiseled_mcplusmod_deepslate"
-  }
-}

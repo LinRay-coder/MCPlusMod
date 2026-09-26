@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "mcplusmod:block/cut_mcplusmod_sandstone",
-    "side": "mcplusmod:block/cut_mcplusmod_sandstone",
-    "top": "mcplusmod:block/cut_mcplusmod_sandstone"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "mcplusmod:mcplusmod_sandstone",
-  "result": {
-    "id": "mcplusmod:cut_mcplusmod_sandstone_wall"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "mcplusmod:block/cut_mcplusmod_stone_bricks",
-    "side": "mcplusmod:block/cut_mcplusmod_stone_bricks",
-    "top": "mcplusmod:block/cut_mcplusmod_stone_bricks"
-  }
-}

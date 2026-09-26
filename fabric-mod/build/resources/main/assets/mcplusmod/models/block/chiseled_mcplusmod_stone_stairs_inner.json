@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "mcplusmod:block/chiseled_mcplusmod_stone",
-    "side": "mcplusmod:block/chiseled_mcplusmod_stone",
-    "top": "mcplusmod:block/chiseled_mcplusmod_stone"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "mcplusmod:mcplusmod_stone",
-  "result": {
-    "id": "mcplusmod:smooth_mcplusmod_stone"
-  }
-}
