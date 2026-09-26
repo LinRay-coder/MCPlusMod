@@ -24,7 +24,7 @@ import net.minecraft.world.item.equipment.EquipmentAssets;
 import net.minecraft.world.level.block.Block;
 
 /**
- * 装备系统：青金石 / 绿宝石 / 紫水晶三套盔甲与工具，以及青金石块（可激活信标）。
+ * 装备系统：青金石 / 绿宝石 / 紫水晶三套盔甲与工具。
  *
  * <p>26.1 装备为「组件化」：{@link ArmorMaterial} / {@link ToolMaterial} 均为 record，无需注册；
  * 盔甲/工具通过 {@link Item.Properties} 的 builder 方法（{@code humanoidArmor} / {@code sword} 等）创建。
@@ -59,7 +59,7 @@ public final class ModEquipment {
 	public static final List<Item> BOOTS_LIST = new ArrayList<>();
 	/** 剑（swords）。 */
 	public static final List<Item> SWORDS = new ArrayList<>();
-	/** 矛（spears）。26.1 新增武器，可近战戳刺 + 右键蓄力投掷。 */
+	/** 矛（spears）。26.1 新增武器，两种攻击：点按戳刺（Jab）+ 按住右键蓄力冲锋（Charge，伤害随相向速度提升）；不能投掷。 */
 	public static final List<Item> SPEARS = new ArrayList<>();
 	/** 镐（pickaxes）。 */
 	public static final List<Item> PICKAXES = new ArrayList<>();
@@ -171,8 +171,6 @@ public final class ModEquipment {
 	// ============================ 材料物品 ============================
 	// 青金石 / 绿宝石 / 紫水晶均沿用原版材料物品（minecraft:lapis_lazuli / emerald / amethyst_shard），
 	// 无需本 mod 额外注册材料；装备通过配方与修复标签绑定到这些原版物品。
-	// 「让青金石块激活信标」直接对原版 minecraft:lapis_block 追加 beacon_base_blocks 标签实现，
-	// 见 ModBlockTagProvider（不再新建自定义青金石块）。
 
 	// ============================ 盔甲物品 ============================
 
@@ -254,10 +252,10 @@ public final class ModEquipment {
 	}
 
 	/**
-	 * 矛的等级档位：直接沿用原版对应材料矛的 9 个投掷/戳刺参数，保证行为与原版同级矛一致。
+	 * 矛的等级档位：直接沿用原版对应材料矛的 9 个战斗参数，保证行为与原版同级矛一致。
 	 *
 	 * <p>{@link Item.Properties#spear(ToolMaterial, float, float, float, float, float, float, float, float, float)}
-	 * 的 9 个 float 依次为原版矛内部参数（攻击伤害 / 攻速 / 蓄力戳刺相关 / 投掷伤害与飞行等）。
+	 * 的 9 个 float 为原版矛内部参数（戳刺伤害 / 攻速 / 冲锋判定与伤害等相关）。
 	 * 数值取自反编译的原版 {@code Items} 类：铁矛档与钻石矛档。
 	 */
 	private enum SpearTier {

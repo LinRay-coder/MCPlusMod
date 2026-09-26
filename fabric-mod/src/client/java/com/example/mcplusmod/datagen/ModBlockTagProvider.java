@@ -12,7 +12,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.tags.TagAppender;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 
 /**
  * 方块标签数据生成。
@@ -48,10 +47,6 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 				pickaxe.add(block);
 			}
 		}
-
-		// 让原版青金石块（minecraft:lapis_block）可作为信标底座。
-		// Fabric 标签会与原版数据合并：这里向 beacon_base_blocks 追加原版青金石块。
-		valueLookupBuilder(BlockTags.BEACON_BASE_BLOCKS).add(Blocks.LAPIS_BLOCK);
 	}
 
 	private static void addBlock(
