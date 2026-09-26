@@ -2,61 +2,62 @@
 
 ![Banner](fabric-mod/promo/banner.png)
 
-一个适用于 **Minecraft 26.1（Fabric）** 的扩展模组：新增青金石 / 绿宝石 / 紫水晶三套装备与工具、10 种战斗手套、3 种矛，以及大量石材建筑变种（楼梯 / 台阶 / 墙，含平滑 / 切制 / 雕纹）。
+A **Fabric** mod for **Minecraft 26.1** that expands the game with new equipment tiers, combat gloves, and building blocks.
 
-- **零 Mixin、零第三方硬依赖**：仅需 Fabric Loader + Fabric API，天然低冲突
-- **中英双语**：完整的 `zh_cn` / `en_us` 本地化
-- **数据生成驱动**：全部模型、配方、战利品表、标签由 datagen 生成
+- **Zero Mixin, zero third-party hard dependencies** — only Fabric Loader + Fabric API required, naturally low conflict potential
+- **Bilingual** — full `zh_cn` / `en_us` localization
+- **Datagen-driven** — all models, recipes, loot tables, tags, and language files are auto-generated
 
-## 环境要求
+## Installation
 
-| 组件 | 版本 |
+1. Install [Fabric Loader](https://fabricmc.net/) and the matching [Fabric API](https://modrinth.com/mod/fabric-api)
+2. Download `MCPlusMod-26.1.2-Fabric-x.x.x.jar` from [Releases](../../releases)
+3. Drop the jar into `.minecraft/mods/`
+4. Launch — no prerequisite mods needed
+
+## Features
+
+### Equipment & Tools (3 sets × 10 pieces = 30 items)
+Three new material tiers, each with distinct balance:
+
+| Material | Balance |
 |---|---|
-| Minecraft | 26.1.x |
-| Fabric Loader | ≥ 0.19.3 |
-| Fabric API | 0.155.2+26.1.2 |
-| Java | ≥ 25 |
-| 内存 | **建议 ≥ 8GB**（分配不足会 OOM） |
+| **Lapis Lazuli** | Durability-focused; high enchantability, iron-level stats |
+| **Emerald** | ≈ Diamond tier; trades off some durability for easier villager acquisition |
+| **Amethyst** | Mid-tier between iron and diamond; crafted with **Amethyst Blocks** for elevated stats |
 
-## 安装
+Each set includes: Helmet, Chestplate, Leggings, Boots, Sword, **Spear**, Pickaxe, Axe, Shovel, Hoe
 
-1. 安装 [Fabric Loader](https://fabricmc.net/) 与对应版本的 [Fabric API](https://modrinth.com/mod/fabric-api)
-2. 从 [Releases](../../releases) 下载 `MCPlusMod-26.1.2-Fabric-x.x.x.jar`
-3. 将 jar 放入 `.minecraft/mods/` 目录
-4. 启动游戏即可，无需任何前置 mod
+- **Spear**: Vanilla spear mechanics — quick **Jab** (tap attack) and velocity-based **Charge** (hold use while closing on target). No throwing. Repairable with the corresponding material at an anvil.
 
-## 内容概览
+### Combat Gloves (10 variants)
+Leather / Chain / Copper / Iron / Gold / Diamond / Netherite / Lapis / Emerald / Amethyst
 
-### 装备与工具（3 套 × 10 件 = 30 件）
-- **材质**：青金石（偏耐久）/ 绿宝石（≈钻石偏强）/ 紫水晶（居中）
-- 每套含：头盔、胸甲、护腿、靴子、剑、**矛**、镐、斧、锹、锄
-- 矛支持投掷与近战；装备可用对应材料在铁砧修复
+- **Main-hand only**: Armor and toughness bonuses apply only when held in the main hand; placing in armor or other slots grants no protection
+- **Knockback punch**: Attacking a living entity flings it away from the player, with extra impact/fall damage; stronger tiers send targets farther
+- **Enchantment restriction** (by design): Only **Knockback**, **Mending**, and **Unbreaking** can be applied — no Sharpness, Fire Aspect, Protection, or Thorns
+- **Netherite Glove**: Upgrade from Diamond Glove at a Smithing Table (Netherite Ingot + Upgrade Template); not craftable directly
 
-### 战斗手套（10 种）
-- 皮革 / 锁链 / 铜 / 铁 / 金 / 钻石 / 下界合金 / 青金石 / 绿宝石 / 紫水晶
-- **主手持握生效**：提供护甲与韧性加成，攻击时将目标击飞
-- 附魔限制：仅可附「击退」「经验修补」「耐久」（刻意设计）
-- 下界合金手套经锻造台升级获得
+### Building Blocks
+- **31 custom stone variants**: base / stairs / slab / wall + smooth / cut / chiseled variants
+- **3 simplified sets**: End Stone / Purpur / Nether Brick (base + stairs / slab / wall)
+- Mining tier: requires stone pickaxe or better
 
-### 建筑方块
-- 31 种自定义石材方块：base / 楼梯 / 台阶 / 墙 + 平滑 / 切制 / 雕纹变体
-- 3 套简版系列：末地石 / 紫珀 / 下界砖
-- 青金石块可作为信标底座
-
-## 从源码构建
+## Building from Source
 
 ```bash
 cd fabric-mod
-./gradlew runDatagen   # 先生成数据
-./gradlew build        # 再构建（请勿与 runDatagen 串联为一条命令）
+./gradlew runDatagen   # generate data first
+./gradlew build        # then build (do NOT chain with runDatagen)
 ```
 
-产物位于 `fabric-mod/build/libs/`。
+Output jar is at `fabric-mod/build/libs/`.
 
-## 测试
+## Testing
 
-游戏内测试清单见 [TEST_REPORT.md](fabric-mod/TEST_REPORT.md)（自动化验证已全部通过，人工游戏内测试待执行）。
+In-game test checklist: see [TEST_REPORT.md](fabric-mod/TEST_REPORT.md)  
+(Automated/static verification passed; manual in-game testing scheduled for after hardware upgrade.)
 
-## 许可证
+## License
 
-MIT，详见 [LICENSE](LICENSE)。
+MIT — see [LICENSE](LICENSE).
