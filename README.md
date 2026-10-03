@@ -2,16 +2,12 @@
 
 ![Banner](fabric-mod/promo/banner.png)
 
-A **Fabric** mod for **Minecraft 26.1** that expands the game with new equipment tiers, combat gloves, and building blocks.
-
-- **Zero Mixin, zero third-party hard dependencies** — only Fabric Loader + Fabric API required, naturally low conflict potential
-- **Bilingual** — full `zh_cn` / `en_us` localization
-- **Datagen-driven** — all models, recipes, loot tables, tags, and language files are auto-generated
+A **Fabric** mod for **Minecraft** that expands the game with new equipment tiers,combat gloves,and building blocks,etc.
 
 ## Installation
 
 1. Install [Fabric Loader](https://fabricmc.net/) and the matching [Fabric API](https://modrinth.com/mod/fabric-api)
-2. Download `MCPlusMod-26.1.2-Fabric-x.x.x.jar` from [Releases](../../releases)
+2. Download `MCPlusMod-(Minecraft Version)-Fabric-x.x.x.jar` from [Releases](../../releases)
 3. Drop the jar into `.minecraft/mods/`
 4. Launch — no prerequisite mods needed
 
@@ -26,10 +22,7 @@ Three new material tiers, each with distinct balance:
 | **Emerald** | ≈ Diamond tier; trades off some durability for easier villager acquisition |
 | **Amethyst** | Mid-tier between iron and diamond; crafted with **Amethyst Blocks** for elevated stats |
 
-Each set includes: Helmet, Chestplate, Leggings, Boots, Sword, **Spear**, Pickaxe, Axe, Shovel, Hoe
-
-- **Spear**: Vanilla spear mechanics — quick **Jab** (tap attack) and velocity-based **Charge** (hold use while closing on target). No throwing. Repairable with the corresponding material at an anvil.
-
+Each set includes: Helmet, Chestplate, Leggings, Boots, Sword, Spear, Pickaxe, Axe, Shovel, Hoe.
 ### Combat Gloves (10 variants)
 Leather / Chain / Copper / Iron / Gold / Diamond / Netherite / Lapis / Emerald / Amethyst
 
@@ -52,12 +45,5 @@ cd fabric-mod
 ```
 
 Output jar is at `fabric-mod/build/libs/`.
-
-## Testing
-
-In-game test checklist: see [TEST_REPORT.md](fabric-mod/TEST_REPORT.md)  
-(Automated/static verification passed; manual in-game testing scheduled for after hardware upgrade.)
-
 ## License
-
-MIT — see [LICENSE](LICENSE).
+GPL v3 — see [LICENSE](LICENSE).
